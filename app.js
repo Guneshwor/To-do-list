@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://Gunesh:Gune@123@cluster0.li6blao.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true},{ useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://kingpin886722:atlas0987^@cluster0.5ozclgj.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true},{useUnifiedTopology: true});
 
 const itemsSchema = {
   name: String
@@ -62,10 +62,10 @@ app.get("/", function(req, res) {
   });
 
 });
-
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
+
 
 app.get("/:customListName", function(req, res){
   const customListName = _.capitalize(req.params.customListName);
