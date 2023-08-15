@@ -63,6 +63,10 @@ app.get("/", function(req, res) {
 
 });
 
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
 app.get("/:customListName", function(req, res){
   const customListName = _.capitalize(req.params.customListName);
 
