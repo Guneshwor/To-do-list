@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://Gunesh:Gune@123&@cluster1.gmss3fi.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true,useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://LG:Gune@123@cluster0.fbet6eb.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true,useUnifiedTopology: true});
 
 const itemsSchema = {
   name: String
